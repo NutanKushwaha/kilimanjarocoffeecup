@@ -19,10 +19,9 @@ if (!defined('BASEPATH'))
 | environments.
 |
 */
-$config['base_url'] = 'http://bg.com/admin';
-$config['site_url'] = 'http://bg.com/';
-//$config['base_url'] = 'http://localhost/bodyguard/admin/';
-//$config['site_url'] = 'http://localhost/bodyguard/';
+$config['base_url'] = 'http://kilimanjarocoffeecupcompany.com/';
+//$config['base_url'] = 'http://localhost/bodyguard/';
+
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -215,7 +214,7 @@ $config['directory_trigger'] = 'd';
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 0;
+$config['log_threshold'] = 4;
 
 /*
 |--------------------------------------------------------------------------
@@ -359,7 +358,7 @@ $config['encryption_key'] = '*E()*#WQFKJIV&$ NJCU*(*($56799>/,?":';
 | except for 'cookie_prefix' and 'cookie_httponly', which are ignored here.
 |
 */
-$config['sess_cookie_name'] = 'bodyguardBackend';
+$config['sess_cookie_name'] = 'bodyguardFrontend';
 $config['sess_driver'] = 'database';
 $config['sess_save_path'] = 'sessions';
 $config['sess_expiration'] = 7200;
@@ -381,9 +380,9 @@ $config['sess_time_to_update'] = 300;
 |       'cookie_httponly') will also affect sessions.
 |
 */
-$config['cookie_prefix']  = 'bodyadmin';
-$config['cookie_domain']  = '.bg.com';
-$config['cookie_path']    = '/admin';
+$config['cookie_prefix']  = 'bodyfront';
+$config['cookie_domain']  = '.kilimanjarocoffeecupcompany.com';
+$config['cookie_path']    = '/';
 $config['cookie_secure']  = FALSE;
 $config['cookie_httponly']  = TRUE;
 

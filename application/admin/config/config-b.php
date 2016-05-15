@@ -19,8 +19,8 @@ if (!defined('BASEPATH'))
 | environments.
 |
 */
-$config['base_url'] = 'http://bg.com/admin';
-$config['site_url'] = 'http://bg.com/';
+$config['base_url'] = 'http://kilimanjarocoffeecupcompany.com/admin';
+$config['site_url'] = 'http://kilimanjarocoffeecupcompany.com/';
 //$config['base_url'] = 'http://localhost/bodyguard/admin/';
 //$config['site_url'] = 'http://localhost/bodyguard/';
 /*
@@ -382,7 +382,7 @@ $config['sess_time_to_update'] = 300;
 |
 */
 $config['cookie_prefix']  = 'bodyadmin';
-$config['cookie_domain']  = '.bg.com';
+$config['cookie_domain']  = '.kilimanjarocoffeecupcompany.com';
 $config['cookie_path']    = '/admin';
 $config['cookie_secure']  = FALSE;
 $config['cookie_httponly']  = TRUE;

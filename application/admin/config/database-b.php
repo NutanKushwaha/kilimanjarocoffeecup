@@ -51,10 +51,10 @@ if (!defined('BASEPATH'))
 $active_group = 'default';
 $query_builder = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
-$db['default']['database'] = 'synergyd_kilima';
+$db['default']['hostname'] = 'mysqlcluster16';
+$db['default']['username'] = 'kili_manjaro3524';
+$db['default']['password'] = 'Kilimanjaro3524';
+$db['default']['database'] = 'kilimanjaro_new';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = 'bg_';
 $db['default']['pconnect'] = FALSE;
