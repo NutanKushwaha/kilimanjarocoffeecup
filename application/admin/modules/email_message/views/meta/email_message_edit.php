@@ -1,0 +1,1 @@
+<title>Admin - <?php echo $messages['marketing_email'] == 1 ? 'Edit Email Template' : 'Edit Email Content' ?></title>

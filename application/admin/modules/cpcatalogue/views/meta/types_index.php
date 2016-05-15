@@ -1,0 +1,1 @@
+<title>Admin - Manage Product Types</title>

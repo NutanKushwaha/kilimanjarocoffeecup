@@ -1,0 +1,102 @@
+/*!
+ * jQuery Accordion 0.0.1
+ * (c) 2014 Victor Fernandez <victor@vctrfrnndz.com>
+ * MIT Licensed.
+ */
+
+/* Requirements */
+
+[data-accordion] [data-content] {
+    overflow: hidden;
+    max-height: 0;
+}
+
+/* Basic Theme */
+
+[data-accordion] {
+    line-height: 1;
+}
+
+[data-control],
+[data-content] > * {
+/*    border-bottom: 1px solid #888;*/
+    padding: 0 5px 5px;
+}
+
+[data-content] [data-accordion] {
+    border: 0;
+    padding: 0;
+}
+
+[data-accordion] [data-control] {
+    position: relative;
+    padding-right: 40px;
+}
+
+[data-accordion] > [data-control]:after {
+    content: "";
+    position: absolute;
+/*    right: 10px;*/
+    top: 5px;
+    font-size: 25px;
+    font-weight: 200;
+    color: #444;
+    height: 15px;
+    width: 24px;
+    background: rgba(0, 0, 0, 0) url("../../../imgs/icons/down.png") no-repeat scroll center center / 50% auto;
+    background-size: 50%;
+}
+
+[data-accordion].open > [data-control]:after {
+    -webkit-transform: rotate(-180deg); 
+    -ms-transform: rotate(-180deg); 
+    transform: rotate(-180deg); 
+}
+
+.head-accordion-container-dropdown {
+/*    background: #3f3f3f;*/
+/*    border: 1px solid rgb(242, 119, 51);*/
+/*    color: rgb(255, 255, 255);*/
+    border: 1px solid #aaa;
+    border-radius:5px;
+    margin: 5px 0;
+    padding: 5px;
+}
+.head-accordion-container-dropdown button.even {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    box-shadow: none;
+/*    color: rgb(0, 0, 0);*/
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 4px;
+    text-align: left;
+    text-transform: capitalize;
+    width: 50%;
+    
+}
+.accordion-level-2 button{
+    
+}
+
+.accordion-level-3.dropdown-cate{
+    margin: 5px 0;
+    padding: 10px 5px 0;
+}
+.accordion-level-2.dropdown-cate {
+    /*background: rgb(234, 234, 234) none repeat scroll 0 0;*/
+    border: 1px solid rgb(218, 218, 218);
+    margin: 5px 0;
+    padding: 10px 5px 0;
+}
+.accordion-level-3.dropdown-cate{
+    /*background: #ddd;*/
+    border: 1px solid rgb(218, 218, 218);
+    margin: 5px 0;
+    padding: 10px 5px 0;
+}
+.accordion-level-3.dropdown-cate {
+    border: 1px solid rgb(191, 191, 191);
+    margin: 5px 0;
+    padding: 10px 0 0;
+}

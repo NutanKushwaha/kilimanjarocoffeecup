@@ -1,0 +1,1 @@
+<title>Admin - <?php echo $market_email == 1 ? 'Manage Email Templates' : 'Manage Email Content' ?></title>

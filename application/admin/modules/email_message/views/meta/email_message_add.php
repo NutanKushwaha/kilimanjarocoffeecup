@@ -1,0 +1,1 @@
+<title>Admin - Add Email Template</title>

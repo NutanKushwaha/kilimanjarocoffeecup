@@ -1,0 +1,3 @@
+[25-Apr-2016 12:55:13 Europe/London] PHP Fatal error:  Class 'FeShipping' not found in /home/synergyd/public_html/application/modules/catalogue/models/Ordershipdetmodel.php on line 50
+[25-Apr-2016 13:11:54 Europe/London] PHP Fatal error:  Class 'FeShipping' not found in /home/synergyd/public_html/application/modules/catalogue/models/Ordershipdetmodel.php on line 50
+[25-Apr-2016 20:25:16 Asia/Kolkata] PHP Parse error:  syntax error, unexpected 'themes' (T_STRING), expecting ',' or ';' in /home/synergyd/public_html/application/modules/cms/controllers/Cms.php on line 201

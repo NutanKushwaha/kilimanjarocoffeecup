@@ -1,0 +1,103 @@
+<?php     
+    $attr = [
+        'id' => 'user-product-allot',
+        'name' => 'user-product-allot',
+    ];            
+    echo form_open(current_url(), $attr);
+    $hidden_data = [
+        'type'  => 'hidden',
+        'name'  => 'selected_user',
+        'id'    => 'selected_user',
+        'value' => '0',
+    ];
+
+    echo form_input($hidden_data);            
+?>
+	<div class="col-lg-12 ">
+        <?= $this->load->view(THEME . 'layout/inc-menu-only-dashboard');  ?>
+		<div class="col-sm-4"> 
+			<?= form_dropdown('department', $departments, '' , ' class="form-control" id="department"'); ?>
+		</div>
+        <div class="col-sm-5" id="allowted-prod-calc">
+            <button type="submit" class="btn btn-primary">Update!</button>                             
+        </div>             
+	</div>
+    <div class="col-lg-12 ">
+    	<div class="tableWrapper"> 
+    		<table width="100%" border="0" cellpadding="2" cellspacing="0" class="table-bordered">
+    			<thead>
+    				<th width="20%" style="text-align:center">Company User</th>
+    				<th>Products</th>
+    			</thead>
+    			<tbody>
+    				<!-- User list -->
+    				<tr>
+    					<td style="vertical-align:top;" id="department-related-user-table">    						
+    					</td>
+						<td id="department-related-product-table"> <!-- Product table -->
+                            <div class="alert alert-danger"> Please select department. </div>
+    					</td>    					
+    				</tr>
+    			</tbody>
+			</table>
+		</div>
+	</div>
+    <div class="clearfix"></div>    
+    <?= form_close(); ?>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('#department').on('change', function (e) {
+                $("#selected_user").val("0");
+                getDeptUser();
+            })
+
+        });
+
+        function getDeptUser() {
+            if ( $('#department').val() == "0" || $('#department').val() == "") {
+                $("#department-related-product-table").html('<div class="alert alert-danger"> Please select department. </div>');
+                return false;
+            }
+             $.ajax({
+                type: "POST",
+                data: $('#user-product-allot').serialize(),
+                url: "product_allocation/ajax/product_allocation/getDeptUser",
+                success: function(data){                    
+                        $('#department-related-user-table').html("");
+                        $('#department-related-product-table').html("");
+                        data = JSON.parse(data);
+                        if(data.success){
+                            $('#department-related-user-table').html(data.user_html);
+                            $('#department-related-product-table').append(data.prod_html);
+                            $( "input[name='<?= $this->security->get_csrf_token_name() ?>']" ).val(data.csrf_hash);
+                        }
+                    }
+                });
+        }
+
+        function getDeptUserProducts() {
+            if ( $('#department').val() == "0" || $('#department').val() == "") {
+                $("#department-related-product-table").html('<div class="alert alert-danger"> Please select department. </div>');
+                return false;
+            }
+            
+            if( $('#selected_user').val() == 0 || $('#selected_user').val() == "" ) {
+                $("#department-related-product-table").html('<div class="alert alert-danger"> Please select user. </div>');
+                return false;
+            }
+             $.ajax({
+                type: "POST",
+                data: $('#user-product-allot').serialize() ,
+                url: "product_allocation/ajax/product_allocation/getUserDeptProd",
+                success: function(data){
+                        $('#department-related-product-table').html("");
+                        data = JSON.parse(data);
+                        if(data.success){
+                            $('#department-related-product-table').html(data.html);
+                            $( "input[name='<?= $this->security->get_csrf_token_name() ?>']" ).val(data.csrf_hash);
+                        }
+                    }
+                });
+        }
+    </script>

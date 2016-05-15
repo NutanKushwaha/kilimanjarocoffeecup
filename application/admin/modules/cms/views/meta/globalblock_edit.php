@@ -1,0 +1,1 @@
+<title>Admin - Edit Global Block</title>

@@ -1,0 +1,1 @@
+<title>Admin - Manage Template</title>

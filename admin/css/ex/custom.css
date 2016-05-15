@@ -1,0 +1,676 @@
+a,
+a:hover,
+a:focus,
+a:active{
+    text-decoration: none !important;
+}
+/* custom css style (01-10-2015) */
+label.control-label{
+    font-size: 15px !important;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.attr-set-list li{
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    margin: 7px 0;
+    padding: 9px 13px 10px;
+    width: 100%;
+}
+.attr-set-list .btn.btn-info {
+    background: rgb(242, 119, 51) none repeat scroll 0 0;
+    border: 1px solid rgb(207, 103, 35);
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgb(176, 176, 176);
+    font-size: 13px;
+    font-weight: normal;
+    padding: 2px 5px;
+}
+.attr-set-list .btn.btn-info:hover {
+    background: #C24703;
+    transition: 0.5s ease;
+    
+}
+#add-attr-set .help-block{
+    font-size: 12px;
+    margin-top: 0;
+}
+.last-child-dropdown button {
+    color: rgb(0, 0, 0) !important;
+}
+
+
+
+.head-accordion-container-dropdown.accordion-level-parent-1 ul {
+    margin: 0px 20px;
+    border-radius: 5px;
+}
+.last-child-dropdown .odd{
+    padding: 5px 0;
+    margin: 5px 0;
+}
+.mlevel-2 {
+    border-radius: 5px;
+    /*background: #eee;*/
+}
+
+.mlevel-1 span.edit-setting{
+/*   padding-top: 6px;*/
+   padding-bottom: 6px;
+}
+.mlevel-2 span.edit-setting{
+   padding-top: 0px;
+   
+}
+
+
+/* 02-12-2015  Changed by Manoj */
+
+.dept-check-round-btn{
+    text-align: center ;
+} 
+.dept-check-btn-title{
+  text-align: center;  
+}
+.border-1x{
+    width: 100%;
+    height: 1px;
+    background: #aaa;
+}
+.sorting-order-history select {
+    padding-top: 7px !important;
+    font-size: 12px;
+}
+.sorting-order-history select option{
+    color: #000;
+}
+
+.ajax-pagination  .pagination, .ajax-pagination  .pagination  .pagination{
+    margin:5px 0 0 0;
+} 
+
+/*
+    5-05-2015 simple order list
+*/
+.simple-order-list > li {
+    list-style: inherit;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;    
+}
+
+ul#users-comp-list {
+    min-height: 180px;
+    overflow-y: scroll;
+    height: 200px;
+}
+#users-comp-list .list-group-item{
+    padding: 5px 10px; 
+    cursor: pointer;
+}
+
+td#department-related-product {
+    height: 230px;
+    min-height: 180px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    width: 80%;
+    min-width: 75%;
+}
+
+/*
+    07-05-2015 product user allocation 
+*/
+.alt {
+    background: #ddd;
+}
+
+.user-prod-allow-input{
+    width:50px;
+    height: 30px;
+    text-align: center;
+}
+
+#products-qty tr > td, #products-qty th {
+    border-color: #C3AFAF;
+ }
+ 
+ 
+ 
+ /*  warddrobe shopping cart secton style  */
+.warddrobe-product-detail-container{
+    background:#fff;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 5px;
+}
+.warddrobe-product-detail-container h5.media-heading a{
+     color: #111;
+     font-weight: 600;
+}
+.warddrobe-product-detail-container h4.media-heading a{
+     color: rgb(127, 127, 127);
+}
+.warddrobe-product-detail-container .table.table-hover th {
+    font-size: 15px;
+}
+.warddrobe-product-detail-container .table td{
+    padding: 0 !important;
+}
+.warddrobe-product-detail-container .table .border-none td{
+    border: none;
+}
+.warddrobe-product-detail-container .table td, .warddrobe-product-detail-container .table th{
+    border-bottom: 1px solid #ddd;
+}
+.warddrobe-product-detail-container .table h3{
+    margin: 0;
+}
+
+.warddrobe-product-detail-container .table {
+    display: table-caption;
+    margin-bottom: 5px;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 5px;
+}
+.warddrobe-product-detail-container .table.table-hover > thead {
+    display: table-header-group;
+    height: 40px;
+    width: 100%;
+}
+.warddrobe-product-detail-container .table.table-hover > tbody {
+/*    border: 1px solid #ddd;*/
+    box-sizing: padding-box;
+    display: block;
+    height: 120px;
+    max-height: 150px;
+    line-height: 18px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+/*    min-width: 340px;
+    max-width:340px;*/
+    
+    min-width: 455px;
+    max-width: 455px;
+    
+    padding: 0px 5px 10px;
+}
+.warddrobe-product-detail-container tfoot {
+/*    display: table-footer-group;*/
+    display: inline-table;    
+    width: 100%;
+    border-top: 1px solid #BBBBBB;
+}
+.warddrobe-product-detail-container .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+    vertical-align: middle;
+}
+.order_account_name p{
+    font-size: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+.order_qty_counting p{
+    font-size: 15px;
+}
+.deleterow{
+    cursor:pointer;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.warddrobe-product-select-section select{
+    width: 100%;
+}
+
+.warddrobe-product-detail-container p{
+    padding: 0;
+    margin: 0;
+}
+.warddrobe-product-detail-container .media-heading{
+    color: #d37602;
+}
+.warddrobe-product-detail-container .media-heading.date-cart-text a{
+    color: #333;
+    font-weight: 600;
+}
+/* 14 Dec 2015 */
+
+/*16 Dec 2015 */
+
+td#department-related-product-table {
+    overflow: scroll;
+    height: 350px;
+    display: block;
+}
+
+
+/*06 Jan 2016 */
+
+.popup-left-add-product-img-container {
+    border: 1px solid #ddd;
+}
+.left-add-product-img img{
+    display: initial;
+}
+.hrizental-line-0{
+    margin-bottom:0; 
+}
+.product-buy-limit-title {
+    padding-bottom: 10px !important;
+}
+
+
+ul.circle {list-style-type: circle;}
+ul.square {list-style-type: square;}
+ol.upper-roman {list-style-type: upper-roman;}
+ol.lower-alpha {list-style-type: lower-alpha;}
+
+li#prodDesc ul li{
+    list-style-type: square;
+}
+
+.leftalign{
+    text-align: left;
+}
+.divider-vertical {
+    height: 40px;
+    margin: 0 9px;
+    border-left: 1px solid #FFAB32;
+    border-right: 1px solid #FFAB32;    
+    width: 1px;
+    float: left;
+}
+
+
+/* ======================= wardrobe bulk product list (20-01-2016) ========================= */
+.left-wardrobe-compny-bulk-item-container{
+    padding-top: 15px;
+}
+.top-left-wardrobe-title {
+    border-radius: 3px 3px 0 0;
+    margin-top: 5px;
+    padding: 0 12px 0 0;
+}
+.top-left-wardrobe-title h3 {
+    background: #eeeeee none repeat scroll 0 0;
+    border: 1px solid #dedede;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0;
+    padding: 10px;
+}
+.wardrobe-cat-list {
+    border-top: 0 none;
+    padding: 0px 0;
+}
+.wardrobe-cat-list li {
+    border: 1px solid rgb(221, 221, 221);
+    border-bottom: none;
+    padding: 0px 10px;
+}
+.wardrobe-cat-list li:last-child {
+    border-bottom: none;
+}
+.wardrobe-cat-list li a{
+    padding: 7px 0;
+    font-size: 13px;
+    display: block;
+    color: #444;
+}
+/*li.choice-warddrobe-product:nth-child(3n+1) {
+    margin-left: 0;
+}*/
+li.choice-warddrobe-product:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+/*.choice-warddrobe-product:nth-child(3n+3) {
+    margin-right: 0;
+}*/
+.choice-warddrobe-product:nth-child(4n+4) {
+    margin-right: 0;
+}
+
+
+/*  ========= Admin Wardrobe Cart Dropdown =========== */
+
+.dropdown-menu-cart-items-list {
+    max-height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#wardrobe-cart-items-list.dropdown-cart {
+    min-width:250px;
+}
+#wardrobe-cart-items-list.dropdown-cart li .item{
+    display:block;
+    padding:3px 10px;
+    margin: 3px 0;
+}
+#wardrobe-cart-items-list.dropdown-cart li .item:hover{
+    background-color:#f3f3f3;
+}
+#wardrobe-cart-items-list.dropdown-cart li .item:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+#wardrobe-cart-items-list.dropdown-cart li .item-left{
+    float:left;
+}
+#wardrobe-cart-items-list.dropdown-cart li .item-left img,
+#wardrobe-cart-items-list.dropdown-cart li .item-left span.item-info{
+    float:left;
+}
+#wardrobe-cart-items-list.dropdown-cart li .item-left span.item-info{
+    margin-left:10px;   
+}
+#wardrobe-cart-items-list.dropdown-cart li .item-left span.item-info span{
+    display:block;
+}
+#wardrobe-cart-items-list.dropdown-cart li .item-right{
+    float:right;
+}
+#wardrobe-cart-items-list.dropdown-cart li .item-right button{
+    margin-top:14px;
+}
+
+/*  ========= // Admin Wardrobe Cart Dropdown =========== */
+
+.wardrobe-cart-block-count ul{
+
+}
+.wardrobe-cart-block-count ul li#topbar-cart-container {
+    width: 190px;
+}
+.wardrobe-cart-block-count ul li#topbar-cart-container .topbar-cart-left{
+    
+}
+.wardrobe-cart-block-count ul li#topbar-cart-container .topbar-cart-right{
+    
+}
+.cart-head-text {
+    color: rgb(85, 85, 85);
+    font-size: 14px;
+    font-weight: 600;
+}
+.cart-title-text {
+    color: rgb(136, 136, 136);
+}
+.topbar-cart-left{
+     margin-top: 3px;
+}
+.prodt-full-desc-slider-container div#carousel li {
+    border: 1px solid #aaa;
+    margin-right: 10px;
+}
+
+
+/* wardrobe left menu style sheet */
+.submenu{
+    padding-left: 25px;
+}
+
+/* Internal Page Menu  Stylesheet css */
+.custom-internal-menu .men h3{
+    font-size: 13.5px !important;
+}
+.custom-internal-menu .men {
+    height: auto !important;
+    margin-bottom: 3px !important;
+    min-height: auto !important;
+    padding: 5px 10px 12px !important;
+    text-align: left !important;
+    border-radius: 0 !important;
+}
+.custom-internal-menu .men:hover {
+    border: 0 !important;
+}
+.comp_active_categ{
+    background-color: #eee;
+}
+.more-wrap {
+    background: #F27733;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/*-- wardrobe top mini cart css sheet (30-01-2016)  -- */
+.wardrobes-mini-cart-left-prod-img-block{
+    width: 55px;
+    height: 55px;
+    float: left;
+}
+.wardrobes-mini-cart-center-block{
+    width: 150px;
+    float: left;
+}
+.wardrobes-mini-cart-right-block{
+    
+}
+.link-none-btn a{
+    border: none !important;
+    padding:0 !important;
+}
+.link-none-btn,.link-none-btn a{
+      font-size: 12px !important;
+}
+
+
+
+.subpage-product-page ul ul{
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.subpage-product-page ul ul> li {
+    border: 1px solid #aaa;
+    clear: both;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+/* Vishal */
+.allign-center{
+    text-align: center;
+}
+/* Rohit */
+#products-list-div table tr td a {
+    color: #3f3f3f;
+}
+
+
+/* -- #general Add Product Custom -- */
+#general .panel-primary{
+    border-color: #727272;
+}
+#general .panel-group .panel{
+    border-radius: 4px !important;
+}
+#general .panel-primary > .panel-heading {
+    background-color: #404040;
+    border-color: #000000;
+    color: #fff;
+}
+ .wizard > .actions .gernal_btn a, .wizard > .actions .gernal_btn a:hover, .wizard > .actions .gernal_btn a:active{
+    background: #783914 ;
+    border-color: #330000;
+}
+
+
+/* Admin Changes (16-02-2016) */
+
+.table-user-information {
+    border: 1px solid #dadada;
+}
+.table-user-information tr td:nth-child(even){
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+.table-user-information tr td:nth-child(2n+1) {
+    background: #efefef none repeat scroll 0 0;
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    font-weight: 600;
+    width: 30%;
+}
+.table-user-information tr td:nth-child(1n){
+    padding-bottom: 10px;
+    padding-top: 9px;
+}
+
+.left-profile-img-block-container{
+    padding: 10px; 
+    /*  background: rgb(239, 239, 239) none repeat scroll 0px 0px;*/ 
+    border: 1px solid rgb(218, 218, 218); 
+}
+.table-user-edit-information .form-control{
+    margin-bottom: 0;
+}
+.profileform-edit .panel-heading{
+    padding-top: 0 ;
+}
+
+/* --------- Upload Button Style Css ----------  */
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 0px 0 !important;
+    display: inherit !important;
+    border-radius: 0 !important;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.btn-default-light{
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.btn-default-light:hover{
+    background-color: #ddd;
+}
+
+
+/* ------------- ( cart view container page )---------------- */
+.table-cart-view-container.table-condensed thead{
+    
+}
+.table-cart-view-container.table-condensed thead th {
+    background: #7f7f7f none repeat scroll 0 0;
+    border: 1px solid #bbb;
+    padding: 8px 10px !important;
+    color: #fff;
+}
+.cart-view-prod-desc-text h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.cart-view-prod-desc-text p{
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+       
+}
+.view-cart-full-container .panel-default{
+    border:none;  
+}
+.view-cart-full-container .panel-heading{
+    border: 1px solid #ddd;
+    border-radius: 0;
+    padding: 5px 10px 10px;
+    margin-bottom: 15px;
+}
+.table-cart-view-container tbody{
+    border:1px solid #ddd;
+}
+.table-cart-view-container tbody tr td {
+    padding: 20px 15px 0 !important;
+}
+
+.table-cart-view-container .panel-footer{
+    border:1px solid #ddd;
+}
+.table-cart-view-container tfoot tr td{
+    padding: 12px 10px !important;
+}
+.view-cart-full-container-2 .panel-title h4 {
+    color: #535353;
+    font-size: 16.5px;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 5px;
+}
+.cart-product-price {
+    color: #636363;
+    font-size: 15px;
+}
+.tfooter-btm-total-price{
+    /* font-size: 19px !important; */
+}
+#order-result-view-content tr:first-child{
+    background: #eee;
+}
+#order-result-view-content tr{
+    background: #fff;
+    
+}
+#order-result-view-content tr td{
+    padding: 10px 5px;
+}
+.user-management-list-table tbody td a{
+    color: #5a5a5a;
+}
+.user-management-list-table tbody td a:hover{
+    color: #aaa;
+}
+.simple-order-list {
+    margin-left: 15px;
+}
+
+/*---------------  Manage Form Template Style  ---------------- */
+
+.manage-template-form-container{
+
+}
+.manage-template-form-container {
+    margin-top: 25px;
+}
+.manage-template-form-container form table tr th {
+    vertical-align: top;
+}
+.manage-template-form-container form table tr td {
+    padding-bottom: 15px !important;
+    vertical-align: top;
+}
+
+
+/* --------------- company wardrobe detail  ----------------- */
+.prodt-full-desc-slider-container .flex-active-slide > img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    width: auto !important;
+}

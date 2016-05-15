@@ -1,0 +1,1 @@
+<title>Event - Newsletter Subscription Failed</title>

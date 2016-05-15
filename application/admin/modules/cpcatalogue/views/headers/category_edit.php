@@ -1,0 +1,1 @@
+<?php $this->load->view('headers/category_add');?>

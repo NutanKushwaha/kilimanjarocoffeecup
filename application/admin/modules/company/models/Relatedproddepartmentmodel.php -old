@@ -1,0 +1,99 @@
+<?php
+
+class Relatedproddepartmentmodel extends CI_Model {
+
+    function __construct() {
+        parent::__construct();
+    }
+
+    function getDetails($rid) {
+        $this->db->where('related_department_id', intval($rid));
+        $rs = $this->db->get('related_department');
+        if ($rs->num_rows() > 0) {
+            return $rs->row_array();
+        }
+        return FALSE;
+    }
+
+    function getProductList($pid) {
+        $this->db->from('related_department');
+        $this->db->order_by('sort_order', 'ASC');
+        $this->db->where('product_id', intval($pid));
+        $this->db->join('department', 'department.id = related_department.department_id', 'left');
+        $rs = $this->db->get();
+        return $rs->result_array();
+    }
+
+
+    function getProductListRefDept($param = []) {
+        if( $param['limit'] ) $this->db->limit( $param['limit'] );
+        if( $param['offset'] ) $this->db->offset( $param['offset'] );
+        return $this->db->select('product.product_id, product.product_name, product.product_sku, product.product_image')
+                ->from('related_department')
+                ->where('department_id', intval($param['dept_id']))
+                ->where('product.ref_product_id', 0)
+                ->join('product', 'product.product_id = related_department.product_id', 'left')->get()->result_array();
+    }
+
+    function getCountProductListRefDept($param = []) {
+        
+        return $this->db->select('count(prod.product_id) as ttl')
+                ->from('related_department')
+                ->where('department_id', intval($param['dept_id']))
+                ->where('prod.ref_product_id', 0)
+                ->join('product as prod', 'prod.product_id = related_department.product_id', 'left')->get()->row_array();
+    }
+
+    function listAll($pid) {        
+        $rs = $this->db->get('department');
+        return $rs->result_array();
+    }
+
+    function getOrder() {
+        $this->db->select_max('sort_order');
+        $query = $this->db->get('related_department');
+        $sort_order = $query->row_array();
+        return $sort_order['sort_order'] + 1;
+    }
+
+    function insertRecord($pid) {
+        $data = array();
+        $data['product_id'] = $pid;
+        $data['sort_order'] = $this->getOrder();
+        $data['department_id'] = $this->input->post('related_department_name', TRUE);
+        //$data['related_department_name'] = $this->input->post('related_department_name', TRUE);
+
+        return $this->db->insert('related_department', $data);
+    }
+
+    function deleteRecord($related_department) {
+        $this->db->where('related_department_id', $related_department['related_department_id']);
+        $this->db->delete('related_department');
+    }
+
+    function deletePolicy($product_id) {
+        $this->db->where('product_id', $product_id);
+        $this->db->delete('related_department');
+    }
+
+    function insert_policy(){
+        $product_id = $this->input->post('product_id');
+        $qty = $this->input->post('qty');
+        $days = $this->input->post('days');
+
+        $this->deletePolicy($product_id);
+        $data = array();
+        $index = 0;
+        if(is_array($this->input->post('depatment'))) {
+            foreach ($this->input->post('depatment') as $key => $value) {
+                    $data[$index]['department_id'] = $value;
+                    $data[$index]['product_id'] = $product_id;
+                    $data[$index]['qty_limit'] = $qty[$value];
+                    $data[$index]['days_limit'] = $days[$value];                
+                $index++;
+            }
+
+            $this->db->insert_batch('related_department', $data);
+        }
+    }
+}

@@ -1,0 +1,239 @@
+old xml format data saving code reference fof future save
+
+/*	
+	Customer saving
+	Customer Field
+*/			
+if( isset($data['BOM']['BO']['BusinessPartners']['row']) 
+	&& !is_null($data['BOM']['BO']['BusinessPartners']['row']) ) {
+	$company_added_on = $company_updated_on = 0;
+	foreach($data['BOM']['BO']['BusinessPartners']['row'] as $key => $val){
+		if(!is_array($val) && in_array($key, $customer_xml_fields) && !empty($val)){
+			$customer_xml_data_fields[$customer_data_fields[$key]] = $val;
+		}
+	}
+
+	$company_code = null;
+	if($customer_xml_data_fields['company_code']){
+		$company_code = trim($customer_xml_data_fields['company_code']);
+		$param['result'] = 'row';
+		$param['fields'] = 'company_code,added_on,updated_on,account_id';
+		$param['where'] = [['company_code' , $company_code]];
+		$existCompany = $this->getCompany('', $param);
+		if($existCompany){
+			$comp_exist = $existCompany;
+			$company_added_on = $existCompany['added_on'];
+			$company_updated_on = time();
+		}else{
+			$comp_exist = false;
+			$company_added_on = time();
+			$company_updated_on = 0;
+		}
+		$customer_xml_data_fields['added_on'] = $company_added_on;
+		$customer_xml_data_fields['updated_on'] = $company_updated_on;
+		$customer_xml_data_fields['comp_exist'] = $comp_exist;
+		
+		$customer_insert = $customer_xml_data_fields;
+		$cust_address = &$data['BOM']['BO']['BPAddresses']['row'];
+		if(!isset($cust_address[0])) {
+			$cust_address = [ '0' => $cust_address];
+		}
+
+		foreach($cust_address as $key => $val){
+			$customer_addr_xml_data_fields = [
+							'company_code'=> '',
+							'address_name'=> '',
+							'street'=> '',
+							'zip_code'=> '',
+							'city'=> '',
+							'county'=> '',
+							'country'=> '',
+							'address_type'=> '',
+							'address_name2'=> '',
+							'address_name3'=> '',
+						];
+
+			foreach($val as $addr_index => $addr_data){
+				if(!is_array($addr_data) && !empty($addr_data)
+					&& in_array($addr_index, $customer_addr_xml_fields)){
+					$customer_addr_xml_data_fields[$customer_addr_data_fields[$addr_index]] = $addr_data;
+				}
+			}
+			$customer_addr_xml_data_fields[ 'company_code' ] = $company_code;
+			$customer_address_insert[] = $customer_addr_xml_data_fields;
+		}
+
+		$employe_det = &$data['BOM']['BO']['ContactEmployees']['row'];
+
+		if(!isset($employe_det[0])) {
+			$employe_det = [ '0' => $employe_det];
+		}
+
+		foreach($employe_det as $key => $val){
+			$customer_emp_xml_data_fields = [
+										'company_code'=> '',
+										'title'=> '',
+										'name'=> '',
+										'first_name'=> '',
+										'middle_name'=> '',
+										'last_name'=> '',
+										'position'=> '',
+										'address'=> '',
+										'phone1'=> '',
+										'phone2'=> '',
+										'mobile'=> '',
+										'fax'=> '',
+										'email'=> '',
+										'active' => '',
+									];
+
+			$customer_emp_xml_data_fields['active'] = 0;
+			
+			foreach($val as $contactIndex => $contactDet) {
+				if(!is_array($contactDet) && !empty($contactDet)
+					&& in_array($contactIndex, $customer_emp_xml_fields)){
+					if($contactIndex == 'Active'){
+						$contactDet = $contactDet == 'tYES' ? 1 : 0;
+					}									
+					$customer_emp_xml_data_fields[$customer_emp_data_fields[$contactIndex]] = $contactDet;
+				}
+			}
+			$customer_emp_xml_data_fields[ 'company_code' ] = $company_code;
+			$customer_emp_insert[] = $customer_emp_xml_data_fields;
+		}
+
+		/*
+		* Insert and update company
+		*/						
+		$this->insert_update_company($customer_insert);
+
+		if($existCompany){
+			/*
+			* Delete company address
+			*/
+			$this->db->where('company_code', $company_code)
+					->delete('company_address');
+			/*
+			* Delete company contact employee
+			*/
+			$this->db->where('company_code', $company_code)
+					->delete('company_customer');
+		}
+
+		/*
+		* Insert address and contact employee
+		*/
+		$this->db->insert_batch('company_address', $customer_address_insert);                    	
+		$this->db->insert_batch('company_customer', $customer_emp_insert);                    	
+		$retBool = true;
+	}
+}
+
+/* product */
+
+/*
+ *  Item Field
+ */
+if (isset($data_row['BOM']['BO']['Items']['row']) && !is_null($data_row['BOM']['BO']['Items']['row'])) {
+
+	foreach ((array) $data_row['BOM']['BO']['Items']['row'] as $key => $val) {
+		#if(in_array($key, $product_xml_fields) && !is_object($val)){
+		if (in_array($key, $product_xml_fields) && !is_array($val)) {
+			$prod_xml_fields[$product_data_fields[$key]] = $val;
+		}
+	}
+	$prod_xml_fields['attribute_set_id'] = 1;
+
+	$item_code = $prod_xml_fields['product_sku'];
+	if (!empty($item_code)) {
+		$param['result'] = 'row';
+		$param['fields'] = 'product_added_on, product_updated_on, product_sku';
+		$param['where'] = [['product_sku', $item_code]];
+		$existProduct = $this->getProduct('', $param);
+		if ($existProduct) {
+			$product_added_on = $existProduct['product_added_on'];
+			$product_updated_on = time();
+		} else {
+			$product_added_on = time();
+			$product_updated_on = 0;
+		}
+		$product_insert = [
+			'ref_product_id' => '0',
+			'product_type_id' => '1',
+			'attribute_set_id' => $prod_xml_fields['attribute_set_id'],
+			'product_sku' => $item_code,
+			'stock_level' => $prod_xml_fields['stock_level'],
+			'supplier_id' => $prod_xml_fields['supplier_id'],
+			'category_id' => $prod_xml_fields['category_id'],
+			'product_name' => $prod_xml_fields['product_name'],
+			'product_alias' => $this->_slug($prod_xml_fields['product_name']),
+			'product_sort_order' => $this->getOrder(),
+			'product_added_on' => $product_added_on,
+			'product_updated_on' => $product_updated_on,
+				/*
+				  'product_description' => '',
+				  'technical_detail' => '',
+				  'product_meta_title' => '',
+				  'product_meta_keywords' => '',
+				  'product_meta_description' => '',
+				 */
+		];
+
+		if ($existProduct) {
+			$this->db->where('product_sku', $item_code)
+					->update('product', $product_insert);
+			$this->db->where('product_sku', $item_code)
+					->delete('product_price_list');
+		} else {
+			$this->db->insert('product', $product_insert);
+		}
+		$price_rows = $data_row['BOM']['BO']['Items_Prices']['row'];
+		foreach ($price_rows as $key => $val) {
+			$prodlist_xml_fields = [ 'product_sku' => '',
+				'price_list' => '',
+				'price' => '',
+				'currency' => '',
+			];
+			$prodlist_xml_fields['product_sku'] = $item_code;
+			foreach ((array) $val as $price_index => $price_data) {
+				if (in_array($price_index, $pricelist_xml_fields) && !is_array($price_data)) {
+					$prodlist_xml_fields[$pricelist_data_fields[$price_index]] = $price_data;
+				}
+			}
+			$product_price_list_insert[] = $prodlist_xml_fields;
+		}
+	}
+	$this->db->insert_batch('product_price_list', $product_price_list_insert);
+	$response = true;
+}
+/* Special prices */
+if($data){
+	if(isset($data['BOM']['BO']['SpecialPrices']['row'])
+		&& $data['BOM']['BO']['SpecialPrices']['row']){
+		$rows = $data['BOM']['BO']['SpecialPrices']['row'];			        
+		
+		foreach ($rows as $rowkey => $rowvalue) {
+			$tmp = [];
+			$tmp_del[] = [  $rowvalue['CardCode'],
+							$rowvalue['ItemCode']
+						 ];
+			$tmp['company_code'] = $rowvalue['CardCode'];
+			$tmp['product_sku'] = $rowvalue['ItemCode'];
+			$tmp['price_list'] = $rowvalue['PriceListNum'];
+			$tmp['price'] = $rowvalue['Price'];
+			$tmp['currency'] = $rowvalue['Currency'];
+			$tmp['discount_percent'] = $rowvalue['DiscountPercent'];
+			$this->data[] = $tmp;
+		}
+		if($this->data){
+			foreach ($tmp_del as $key => $del) {
+				$param = [];
+				$param['where']['company_code'] = $del['0'];
+				$param['where']['product_sku'] = $del['1'];
+				$this->delete_record($param);
+			}
+			$this->insert_bulk($this->data);
+			$retVal = true;
+		}
+	}
+}

@@ -1,0 +1,130 @@
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+.top-img-bg{
+	background: url("../images/gallery8.jpg");
+	height: 240px;
+	background-size: cover;
+	
+}
+.page-heading{
+	background-color: #293237;
+	padding-bottom: 10px;
+}
+.founder-heading{
+	background-color: #293237;
+	padding-bottom: 10px ;
+	margin: 35px 0px;	
+}
+.page-heading h1, .founder-heading h1{
+	background-color: #fff;
+	padding: 10px 15px;
+	width: 307px;
+	text-align: center;
+	display: inline-block;
+}
+
+.page-heading-bg{
+	background-color: transparent;
+	padding-bottom: 10px;
+}
+
+.page-heading-bg h1{
+         background-color: #293237;
+    color: white;
+    display: inline-block;
+    font-weight: 500;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    text-align: center;
+    width: 307px;
+}
+
+
+.page-heading-t{
+	background-color: transparent;
+	padding-bottom: 10px;
+}
+
+.page-heading-t h1{
+	background-color: transparent;
+    color: #293237;
+    display: inline-block;
+    font-weight: 500;
+    margin: 0;
+    padding: 5px 15px;
+    text-align: center;
+    width: 555px;
+}
+
+
+.white-border{
+	padding-top: 30px;
+}
+.white-border hr{
+	width: 307px;
+	display: inline-block;
+
+}
+.org-block{
+	background-color: #FFAD1F;
+	height: 150px;
+
+}
+.green-block{
+	background-color: #143121;
+	height: 150px;
+	width: 80%;
+}
+.logo{
+	padding: 5px 0px;
+}
+.page-txt{
+	width: 960px;
+	margin:0 auto; 
+}
+.page-txt h2{
+	font-size: 36px;
+	font-style: italic;
+	font-weight: bold;
+	margin: 25px 0px;
+}
+.page-txt p{
+	line-height: 26px;
+	font-size: 20px;
+	margin: 40px 0px;
+}
+.founder p, .yellow-bg p{
+	line-height: 26px;
+	font-size: 20px;
+	margin: 50px 0px 0px 0px;
+	font-weight: bold;
+}
+.yellow-bg img{
+	padding-top: 25px;
+}
+.yellow-bg{
+	background-color: #FFAD1F;
+}
+
+
+@media only screen and (max-width: 768px) and (min-width:320px){
+
+	.white-border hr{
+		width:100%;
+	
+	}
+	.page-txt{
+		width: 100%;
+		padding:0px 10px; 
+	}
+	.logo{
+	padding: 0px !important;
+	
+	}
+	.page-heading h1, .founder-heading h1{
+		width: 100% !important;
+	}
+  }
