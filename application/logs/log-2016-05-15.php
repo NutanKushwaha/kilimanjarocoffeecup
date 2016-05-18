@@ -3781,3 +3781,200 @@ DEBUG - 2016-05-15 17:20:30 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecu
 DEBUG - 2016-05-15 17:20:30 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/templates/subpage.php
 INFO - 2016-05-15 17:20:30 --> Final output sent to browser
 DEBUG - 2016-05-15 17:20:30 --> Total execution time: 0.3276
+INFO - 2016-05-15 21:14:19 --> Config Class Initialized
+INFO - 2016-05-15 21:14:19 --> Hooks Class Initialized
+DEBUG - 2016-05-15 21:14:19 --> UTF-8 Support Enabled
+INFO - 2016-05-15 21:14:19 --> Utf8 Class Initialized
+INFO - 2016-05-15 21:14:19 --> URI Class Initialized
+DEBUG - 2016-05-15 21:14:19 --> No URI present. Default controller set.
+INFO - 2016-05-15 21:14:19 --> Router Class Initialized
+INFO - 2016-05-15 21:14:19 --> Output Class Initialized
+INFO - 2016-05-15 21:14:19 --> Security Class Initialized
+DEBUG - 2016-05-15 21:14:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-05-15 21:14:19 --> Input Class Initialized
+INFO - 2016-05-15 21:14:19 --> Language Class Initialized
+INFO - 2016-05-15 21:14:19 --> Language Class Initialized
+INFO - 2016-05-15 21:14:19 --> Config Class Initialized
+INFO - 2016-05-15 21:14:19 --> Loader Class Initialized
+INFO - 2016-05-15 21:14:19 --> Helper loaded: date_helper
+INFO - 2016-05-15 21:14:19 --> Helper loaded: function_helper
+INFO - 2016-05-15 21:14:19 --> Helper loaded: common_helper
+INFO - 2016-05-15 21:14:19 --> Helper loaded: cms_helper
+INFO - 2016-05-15 21:14:19 --> Database Driver Class Initialized
+INFO - 2016-05-15 21:14:20 --> Session: Class initialized using 'database' driver.
+INFO - 2016-05-15 21:14:20 --> User Agent Class Initialized
+DEBUG - 2016-05-15 21:14:20 --> Utility Class Initialized
+INFO - 2016-05-15 21:14:20 --> Cart Class Initialized
+INFO - 2016-05-15 21:14:20 --> Helper loaded: url_helper
+INFO - 2016-05-15 21:14:20 --> Helper loaded: text_helper
+INFO - 2016-05-15 21:14:20 --> Helper loaded: image_helper
+INFO - 2016-05-15 21:14:20 --> Helper loaded: form_helper
+INFO - 2016-05-15 21:14:20 --> Helper loaded: widget_helper
+DEBUG - 2016-05-15 21:14:20 --> Config file loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\config/custom-config.php
+DEBUG - 2016-05-15 21:14:20 --> HTTP Class Initialized
+DEBUG - 2016-05-15 21:14:20 --> Assets Class Initialized
+DEBUG - 2016-05-15 21:14:20 --> HTML Class Initialized
+DEBUG - 2016-05-15 21:14:20 --> Metautils Class Initialized
+INFO - 2016-05-15 20:14:20 --> Model Class Initialized
+DEBUG - 2016-05-15 20:14:20 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\modules/cms/models/Pagemodel.php
+INFO - 2016-05-15 20:14:20 --> Model Class Initialized
+DEBUG - 2016-05-15 20:14:20 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/blocks/global_charity-top-block.php
+DEBUG - 2016-05-15 20:14:20 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/blocks/default.php
+DEBUG - 2016-05-15 20:14:20 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/blocks/default.php
+DEBUG - 2016-05-15 20:14:20 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/blocks/default.php
+DEBUG - 2016-05-15 20:14:20 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/blocks/default.php
+INFO - 2016-05-15 20:14:20 --> Model Class Initialized
+INFO - 2016-05-15 20:14:20 --> Model Class Initialized
+INFO - 2016-05-15 20:14:20 --> Model Class Initialized
+INFO - 2016-05-15 20:14:20 --> Model Class Initialized
+INFO - 2016-05-15 20:14:20 --> Controller Class Initialized
+INFO - 2016-05-15 20:14:20 --> Helper loaded: cookie_helper
+DEBUG - 2016-05-15 20:14:21 --> Config file loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\config/flexi_auth.php
+INFO - 2016-05-15 20:14:21 --> Language file loaded: language/english/flexi_auth_lang.php
+DEBUG - 2016-05-15 20:14:21 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\modules/catalogue/models/Productmodel.php
+INFO - 2016-05-15 20:14:21 --> Model Class Initialized
+DEBUG - 2016-05-15 20:14:21 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\modules/slideshow/models/Slidemodel.php
+INFO - 2016-05-15 20:14:21 --> Model Class Initialized
+DEBUG - 2016-05-15 20:14:21 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\modules/cms/models/Testimonialmodel.php
+INFO - 2016-05-15 20:14:21 --> Model Class Initialized
+DEBUG - 2016-05-15 20:14:21 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\modules/catalogue/models/Categorymodel.php
+INFO - 2016-05-15 20:14:21 --> Model Class Initialized
+DEBUG - 2016-05-15 20:14:23 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/meta/default.php
+DEBUG - 2016-05-15 20:14:23 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/headers/global.php
+DEBUG - 2016-05-15 20:14:23 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/layout/inc-header.php
+DEBUG - 2016-05-15 20:14:23 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/layout/inc-slider.php
+DEBUG - 2016-05-15 20:14:23 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/layout/inc-footer.php
+DEBUG - 2016-05-15 20:14:23 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/templates/default-homepage.php
+INFO - 2016-05-15 20:14:23 --> Final output sent to browser
+DEBUG - 2016-05-15 20:14:23 --> Total execution time: 4.6883
+INFO - 2016-05-15 21:14:24 --> Config Class Initialized
+INFO - 2016-05-15 21:14:24 --> Hooks Class Initialized
+DEBUG - 2016-05-15 21:14:24 --> UTF-8 Support Enabled
+INFO - 2016-05-15 21:14:24 --> Utf8 Class Initialized
+INFO - 2016-05-15 21:14:24 --> URI Class Initialized
+INFO - 2016-05-15 21:14:24 --> Router Class Initialized
+INFO - 2016-05-15 21:14:24 --> Output Class Initialized
+INFO - 2016-05-15 21:14:24 --> Security Class Initialized
+DEBUG - 2016-05-15 21:14:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-05-15 21:14:24 --> Input Class Initialized
+INFO - 2016-05-15 21:14:24 --> Language Class Initialized
+INFO - 2016-05-15 21:14:24 --> Language Class Initialized
+INFO - 2016-05-15 21:14:24 --> Config Class Initialized
+INFO - 2016-05-15 21:14:24 --> Loader Class Initialized
+INFO - 2016-05-15 21:14:24 --> Helper loaded: date_helper
+INFO - 2016-05-15 21:14:24 --> Helper loaded: function_helper
+INFO - 2016-05-15 21:14:24 --> Helper loaded: common_helper
+INFO - 2016-05-15 21:14:24 --> Helper loaded: cms_helper
+INFO - 2016-05-15 21:14:24 --> Database Driver Class Initialized
+INFO - 2016-05-15 21:14:24 --> Session: Class initialized using 'database' driver.
+INFO - 2016-05-15 21:14:24 --> User Agent Class Initialized
+DEBUG - 2016-05-15 21:14:24 --> Utility Class Initialized
+INFO - 2016-05-15 21:14:24 --> Cart Class Initialized
+INFO - 2016-05-15 21:14:24 --> Helper loaded: url_helper
+INFO - 2016-05-15 21:14:24 --> Helper loaded: text_helper
+INFO - 2016-05-15 21:14:24 --> Helper loaded: image_helper
+INFO - 2016-05-15 21:14:24 --> Helper loaded: form_helper
+INFO - 2016-05-15 21:14:24 --> Helper loaded: widget_helper
+DEBUG - 2016-05-15 21:14:24 --> Config file loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\config/custom-config.php
+DEBUG - 2016-05-15 21:14:24 --> HTTP Class Initialized
+DEBUG - 2016-05-15 21:14:24 --> Assets Class Initialized
+DEBUG - 2016-05-15 21:14:24 --> HTML Class Initialized
+DEBUG - 2016-05-15 21:14:24 --> Metautils Class Initialized
+INFO - 2016-05-15 20:14:24 --> Model Class Initialized
+DEBUG - 2016-05-15 20:14:24 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\modules/cms/models/Pagemodel.php
+INFO - 2016-05-15 20:14:24 --> Model Class Initialized
+DEBUG - 2016-05-15 20:14:24 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/blocks/global_charity-top-block.php
+DEBUG - 2016-05-15 20:14:24 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/blocks/default.php
+DEBUG - 2016-05-15 20:14:24 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/blocks/default.php
+DEBUG - 2016-05-15 20:14:24 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/blocks/default.php
+DEBUG - 2016-05-15 20:14:24 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/blocks/default.php
+INFO - 2016-05-15 20:14:24 --> Model Class Initialized
+INFO - 2016-05-15 20:14:24 --> Model Class Initialized
+INFO - 2016-05-15 20:14:24 --> Model Class Initialized
+INFO - 2016-05-15 20:14:24 --> Model Class Initialized
+INFO - 2016-05-15 20:14:24 --> Controller Class Initialized
+INFO - 2016-05-15 20:14:24 --> Helper loaded: cookie_helper
+DEBUG - 2016-05-15 20:14:24 --> Config file loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\config/flexi_auth.php
+INFO - 2016-05-15 20:14:24 --> Language file loaded: language/english/flexi_auth_lang.php
+DEBUG - 2016-05-15 20:14:24 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\modules/catalogue/models/Productmodel.php
+INFO - 2016-05-15 20:14:24 --> Model Class Initialized
+DEBUG - 2016-05-15 20:14:24 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\modules/slideshow/models/Slidemodel.php
+INFO - 2016-05-15 20:14:24 --> Model Class Initialized
+DEBUG - 2016-05-15 20:14:24 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\modules/cms/models/Testimonialmodel.php
+INFO - 2016-05-15 20:14:24 --> Model Class Initialized
+DEBUG - 2016-05-15 20:14:24 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\modules/catalogue/models/Categorymodel.php
+INFO - 2016-05-15 20:14:24 --> Model Class Initialized
+DEBUG - 2016-05-15 20:14:25 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/pages/404.php
+DEBUG - 2016-05-15 20:14:25 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/headers/global.php
+DEBUG - 2016-05-15 20:14:25 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/layout/inc-header.php
+DEBUG - 2016-05-15 20:14:25 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/messages/inc-messages.php
+DEBUG - 2016-05-15 20:14:25 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/layout/inc-footer.php
+DEBUG - 2016-05-15 20:14:25 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/templates/subpage.php
+INFO - 2016-05-15 20:14:25 --> Final output sent to browser
+DEBUG - 2016-05-15 20:14:25 --> Total execution time: 0.9141
+INFO - 2016-05-15 21:14:27 --> Config Class Initialized
+INFO - 2016-05-15 21:14:27 --> Hooks Class Initialized
+DEBUG - 2016-05-15 21:14:27 --> UTF-8 Support Enabled
+INFO - 2016-05-15 21:14:27 --> Utf8 Class Initialized
+INFO - 2016-05-15 21:14:27 --> URI Class Initialized
+DEBUG - 2016-05-15 21:14:27 --> No URI present. Default controller set.
+INFO - 2016-05-15 21:14:27 --> Router Class Initialized
+INFO - 2016-05-15 21:14:27 --> Output Class Initialized
+INFO - 2016-05-15 21:14:27 --> Security Class Initialized
+DEBUG - 2016-05-15 21:14:27 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-05-15 21:14:27 --> Input Class Initialized
+INFO - 2016-05-15 21:14:27 --> Language Class Initialized
+INFO - 2016-05-15 21:14:27 --> Language Class Initialized
+INFO - 2016-05-15 21:14:27 --> Config Class Initialized
+INFO - 2016-05-15 21:14:27 --> Loader Class Initialized
+INFO - 2016-05-15 21:14:27 --> Helper loaded: date_helper
+INFO - 2016-05-15 21:14:27 --> Helper loaded: function_helper
+INFO - 2016-05-15 21:14:27 --> Helper loaded: common_helper
+INFO - 2016-05-15 21:14:27 --> Helper loaded: cms_helper
+INFO - 2016-05-15 21:14:27 --> Database Driver Class Initialized
+INFO - 2016-05-15 21:14:27 --> Session: Class initialized using 'database' driver.
+INFO - 2016-05-15 21:14:27 --> User Agent Class Initialized
+DEBUG - 2016-05-15 21:14:27 --> Utility Class Initialized
+INFO - 2016-05-15 21:14:27 --> Cart Class Initialized
+INFO - 2016-05-15 21:14:27 --> Helper loaded: url_helper
+INFO - 2016-05-15 21:14:27 --> Helper loaded: text_helper
+INFO - 2016-05-15 21:14:27 --> Helper loaded: image_helper
+INFO - 2016-05-15 21:14:27 --> Helper loaded: form_helper
+INFO - 2016-05-15 21:14:27 --> Helper loaded: widget_helper
+DEBUG - 2016-05-15 21:14:27 --> Config file loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\config/custom-config.php
+DEBUG - 2016-05-15 21:14:27 --> HTTP Class Initialized
+DEBUG - 2016-05-15 21:14:27 --> Assets Class Initialized
+DEBUG - 2016-05-15 21:14:27 --> HTML Class Initialized
+DEBUG - 2016-05-15 21:14:27 --> Metautils Class Initialized
+INFO - 2016-05-15 20:14:27 --> Model Class Initialized
+DEBUG - 2016-05-15 20:14:27 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\modules/cms/models/Pagemodel.php
+INFO - 2016-05-15 20:14:27 --> Model Class Initialized
+DEBUG - 2016-05-15 20:14:27 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/blocks/global_charity-top-block.php
+DEBUG - 2016-05-15 20:14:27 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/blocks/default.php
+DEBUG - 2016-05-15 20:14:27 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/blocks/default.php
+DEBUG - 2016-05-15 20:14:27 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/blocks/default.php
+DEBUG - 2016-05-15 20:14:27 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/blocks/default.php
+INFO - 2016-05-15 20:14:28 --> Model Class Initialized
+INFO - 2016-05-15 20:14:28 --> Model Class Initialized
+INFO - 2016-05-15 20:14:28 --> Model Class Initialized
+INFO - 2016-05-15 20:14:28 --> Model Class Initialized
+INFO - 2016-05-15 20:14:28 --> Controller Class Initialized
+INFO - 2016-05-15 20:14:28 --> Helper loaded: cookie_helper
+DEBUG - 2016-05-15 20:14:28 --> Config file loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\config/flexi_auth.php
+INFO - 2016-05-15 20:14:28 --> Language file loaded: language/english/flexi_auth_lang.php
+DEBUG - 2016-05-15 20:14:28 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\modules/catalogue/models/Productmodel.php
+INFO - 2016-05-15 20:14:28 --> Model Class Initialized
+DEBUG - 2016-05-15 20:14:28 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\modules/slideshow/models/Slidemodel.php
+INFO - 2016-05-15 20:14:28 --> Model Class Initialized
+DEBUG - 2016-05-15 20:14:28 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\modules/cms/models/Testimonialmodel.php
+INFO - 2016-05-15 20:14:28 --> Model Class Initialized
+DEBUG - 2016-05-15 20:14:28 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\modules/catalogue/models/Categorymodel.php
+INFO - 2016-05-15 20:14:28 --> Model Class Initialized
+DEBUG - 2016-05-15 20:14:28 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/meta/default.php
+DEBUG - 2016-05-15 20:14:28 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/headers/global.php
+DEBUG - 2016-05-15 20:14:28 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/layout/inc-header.php
+DEBUG - 2016-05-15 20:14:28 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/layout/inc-slider.php
+DEBUG - 2016-05-15 20:14:28 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/layout/inc-footer.php
+DEBUG - 2016-05-15 20:14:28 --> File loaded: D:\xampp\htdocs\kilimanjarocoffeecup\application\views\themes/default/templates/default-homepage.php
+INFO - 2016-05-15 20:14:28 --> Final output sent to browser
+DEBUG - 2016-05-15 20:14:28 --> Total execution time: 1.4331

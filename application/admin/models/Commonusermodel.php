@@ -486,6 +486,10 @@ class CommonuserModel extends Commonmodel {
 						];		
 		$response = $this->flexi_auth->update_user($user_profile->uacc_id, $profile_data);
 	}
+        
+        function delete_user($user_profile) {
+		$response = $this->flexi_auth->delete_user($user_profile->uacc_id);
+	}
 	/*  */
 	public function _create_user_product_policy( $opt = []){
 		$user_id = 0;
