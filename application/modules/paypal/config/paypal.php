@@ -1,14 +1,17 @@
-<?php  
-if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php
 
-/** 
+if (!defined('BASEPATH'))
+    exit('No direct script access allowed');
+
+/**
  * Sandbox / Test Mode
  * -------------------------
  * TRUE means you'll be hitting PayPal's sandbox/test servers.  FALSE means you'll be hitting the live servers.
  */
-$config['Sandbox'] = True;
 
-/* 
+$config['Sandbox'] = (MCC_PAYPAL_DEMO_MODE == 1) ? TRUE : FALSE;
+
+/*
  * PayPal API Version
  * ------------------
  * The library is currently using PayPal API version 123.0.
@@ -30,9 +33,9 @@ $config['APIVersion'] = '123.0';
  * Live: https://www.paypal.com/us/cgi-bin/webscr?cmd=_login-api-run
  *
  */
-$config['APIUsername'] = $config['Sandbox'] ? 'anita.singh2112_api1.gmail.com' : MCC_PAYPAL_API_USERNAME;
-$config['APIPassword'] = $config['Sandbox'] ? 'M7FY5PCTDRRSTENV' : MCC_PAYPAL_API_PASSWORD;
-$config['APISignature'] = $config['Sandbox'] ? 'AFcWxV21C7fd0v3bYYYRCpSSRl31ARcWp135a7q4hTM6DogjJ22qH0s9' : MCC_PAYPAL_API_SIGNATURE;
+$config['APIUsername'] = $config['Sandbox'] ? MCC_PAYPAL_API_USERNAME : MCC_PAYPAL_API_USERNAME;
+$config['APIPassword'] = $config['Sandbox'] ? MCC_PAYPAL_API_PASSWORD : MCC_PAYPAL_API_PASSWORD;
+$config['APISignature'] = $config['Sandbox'] ? MCC_PAYPAL_API_SIGNATURE : MCC_PAYPAL_API_SIGNATURE;
 
 /*
  * Payflow Gateway API Credentials

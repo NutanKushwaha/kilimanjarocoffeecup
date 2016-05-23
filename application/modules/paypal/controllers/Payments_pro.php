@@ -221,7 +221,7 @@ class Payments_pro extends Front_Controller
             redirect( 'paypal/Payments_pro/success');
         }        
     }
-
+//
 	function Set_express_checkout($order_number)
     {
 
@@ -391,8 +391,8 @@ class Payments_pro extends Front_Controller
         else
         {
             // Successful call.  Load view or whatever you need to do here.    
-            redirect( 'https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=' . $PayPalResult['TOKEN'] );
-           //  redirect( 'https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=' . $PayPalResult['TOKEN'] );
+//            redirect( 'https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=' . $PayPalResult['TOKEN'] );
+             redirect( 'https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=' . $PayPalResult['TOKEN'] );
         }
     }
 
